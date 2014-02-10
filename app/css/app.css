@@ -2,29 +2,78 @@
 body {
 width: 100%;
 height: 800px;
-background: #f0f9ff; /* Old browsers */
-background: -moz-linear-gradient(top,  #f0f9ff 0%, #cbebff 47%, #a1dbff 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f9ff), color-stop(47%,#cbebff), color-stop(100%,#a1dbff)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #f0f9ff 0%,#cbebff 47%,#a1dbff 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); /* IE6-9 */
-}
+margin: 0 0 0 0;
+background: #d4d7fe;
 
+
+}
+.cardHover {
+background: black;
+}
+.card {
+float:left;
+width: 200px;
+height: 250px;
+background: white;
+box-shadow: 2px 2px 2px#888888;
+margin: 20px;
+border: 1px solid grey;
+border-radius: 5px;
+}
+.card-title {
+text-align: center;
+font-family: arial;
+color: gray;
+font-weight: bold;
+margin-top: 10px;
+}
+.card-image {
+text-align: center;
+}
+.card-icon {
+width: 180px;
+height: 200px;
+}
+#header {
+height: 50px;
+top: 0;
+background: #666;
+margin-left: 50px;
+margin-right: 50px;
+border: 1px solid white;
+border-radius: 2px;
+}
+.wrapper {
+width: 92%;
+height: 500px;
+margin-left: 50px;
+margin-right: 50px;
+border: 1px solid white;
+margin-top: 20px;
+border-radius: 20px;
+background: white;
+
+}
 .menu {
-  list-style: none;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+  margin: auto;
+width: 25%;
+display: block;
+padding: 13px;
 }
 
 
 .menu > li {
   display: inline;
+  padding: 20px;
 }
 
+.menu li a{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
 .menu > li:before {
-  content: "|";
+ 
   padding-right: 0.3em;
 }
 
@@ -33,8 +82,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
   padding: 0;
 }
 .chart {
-    background: #eee;
-    padding: 3px;
+    width: 600px;
+margin: auto;
+margin-top: 125px;
+padding: 12px;
+border: 1px solid grey;
+border-radius: 6px;
 }
 
 .chart div {
@@ -53,6 +106,27 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
   color: white;
   box-shadow: 2px 2px 2px #666;
 }
+.refresh-button {
+position: absolute;
+top: 240px;
+left: 866px;
+}
+.report-header-name {
+width: 98%;
+margin: 10px;
+height: 30px;
+background: slategrey;
+border-radius: 6px;
+}
+.report-name-span {
+
+font-family: Arial;
+font-size: 24px;
+color: white;
+font-weight: bold;
+padding: 15px;
+}
+align-content: center;
 .axis path,
 .axis line {
   fill: none;
@@ -66,4 +140,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', end
 
 .x.axis path {
   display: none;
+}
+#digitalClock {
+font-weight: bold;
+position: absolute;
+top: 582px;
+left: 1150px;
 }

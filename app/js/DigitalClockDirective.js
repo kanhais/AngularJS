@@ -12,12 +12,12 @@ myApp.directive('digitalClock', function($interval) {
         replace: false,
         template: '<div id="digitalClock" style="font-weight:bold;"><span id="hours">{{hour}}</span> : <span id="minute">{{minute}}</span> : <span id="second">{{second}}</span></div>',
         link: function(scope, element, attrs) {
-            scope.hour = "";
-            scope.minute = "";
-            scope.second = "";
+            scope.hour = '';
+            scope.minute = '';
+            scope.second = '';
 
            $interval(function() {
-                console.log('Here');
+                
                 var today = new Date();
                 scope.hour = today.getHours();
                 scope.minute = today.getMinutes();
