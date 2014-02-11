@@ -10,7 +10,7 @@ myApp.directive('digitalClock', function($interval) {
     var directiveDefinitionObject = {
         restrict: 'E',
         replace: false,
-        template: '<div id="digitalClock" style="font-weight:bold;font-size:20px;"><span id="currentTime">{{currentTime}}</span></div>',
+        template: '<div id="digitalClock"><span id="currentTime">{{currentTime}}</span></div>',
 		scope:{
 			timeFormat : '@',
 			timeZone : '@'

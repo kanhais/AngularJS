@@ -1,6 +1,11 @@
-  <div class="report-header-name"><span class="report-name-span">{{selectedReportName}}</span></div>
-  <div>
-	<bars-chart chart-data="myData"  ></bars-chart>
+  <div class="report-header-name">
+	<span class="report-name-span">{{selectedReportName}}</span>
   </div>
-  <button class="refresh-button" ng-click="refreshChart()">Refresh Chart</button>
+  <div>
+	<bars-chart chart-data="myData"></bars-chart>
+  </div>
+  
+  
+<div class="gridStyle" ng-grid="gridOptions">
+</div>
   

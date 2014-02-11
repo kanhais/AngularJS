@@ -1,6 +1,6 @@
 'use strict';
 
-var myApp = angular.module('myApp', ['ngRoute']);
+var myApp = angular.module('myApp', ['ngRoute','ngGrid']);
 // Declare app level module which depends on filters, and services
 myApp.
 	config(['$routeProvider', function($routeProvider) {

@@ -45,7 +45,7 @@ border-radius: 2px;
 }
 .wrapper {
 width: 92%;
-height: 500px;
+height: 700px;
 margin-left: 50px;
 margin-right: 50px;
 border: 1px solid white;
@@ -84,7 +84,7 @@ font-weight: bold;
 .chart {
     width: 600px;
 margin: auto;
-margin-top: 125px;
+margin-top: 18px;
 padding: 12px;
 border: 1px solid grey;
 border-radius: 6px;
@@ -108,8 +108,8 @@ border-radius: 6px;
 }
 .refresh-button {
 position: absolute;
-top: 240px;
-left: 866px;
+top: 138px;
+left: 980px;
 }
 .report-header-name {
 width: 98%;
@@ -142,8 +142,21 @@ align-content: center;
   display: none;
 }
 #digitalClock {
-font-weight: bold;
-position: absolute;
-top: 582px;
-left: 1150px;
+	font-weight: bold;
+	position: absolute;
+	top: 600px;
+	left: 1150px;
+	border:1px solid black;
+	background:gray;
+	border-radius:5px;
+	font-size:16px;
+	font-family:"Arial Black";
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    width: 800px; 
+    height: 180px;
+	margin-left:320px;
+	margin-top:10px;
 }
