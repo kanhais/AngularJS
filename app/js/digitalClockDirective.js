@@ -9,17 +9,17 @@ var myApp = angular.module('myApp');
 myApp.directive('digitalClock', function($interval) {
     var directiveDefinitionObject = {
         restrict: 'E',
-        replace: false,
-        template: '<div id="digitalClock"><span id="currentTime">{{currentTime}}</span></div>',
+        replace: true,
+        template: '<div id="digitalClock"><span id="currentDate">{{currentDate}}</span><br><span id="currentTime">{{currentTime}}</span></div>',
 		scope:{
-			timeFormat : '@',
-			timeZone : '@'
+			timeZone : '='
 		},
         link: function(scope, element, attrs) {
+		   scope.currentDate = '';
            scope.currentTime = '';
            $interval(function() {
-                var tdate = moment().tz(scope.timeZone).format(scope.timeFormat);
-                scope.currentTime = tdate;
+                scope.currentDate = moment().tz(scope.timeZone).format('dddd, MMMM Do YYYY');
+				scope.currentTime = moment().tz(scope.timeZone).format('h:mm:ss A');
             }, 100);
         }
     };

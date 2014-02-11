@@ -1,3 +1,10 @@
-<div>
-	<digital-clock  time-format="dddd, MMMM Do YYYY, h:mm:ss A" time-zone="America/Los_Angeles"></digital-clock>
+
+<div ng-controller="FooterCtrl">
+	<div class="btn-group">
+		<button type="button" class="btn btn-primary" ng-model="timeZoneCode" btn-radio="'America/Los_Angeles'">America/Los_Angeles</button>
+		<button type="button" class="btn btn-primary" ng-model="timeZoneCode" btn-radio="'Asia/Kolkata'">Asia/Kolkata</button>
+		<button type="button" class="btn btn-primary" ng-model="timeZoneCode" btn-radio="'America/New_York'">America/New_York</button>
+	</div>
+  <digital-clock  time-format="dddd, MMMM Do YYYY, h:mm:ss A" time-zone="timeZoneCode"></digital-clock>
 </div>
+	
